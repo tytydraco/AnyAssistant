@@ -1,12 +1,12 @@
-package com.draco.mfstrim.viewmodels
+package com.draco.anyassistant.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.draco.mfstrim.BuildConfig
-import com.draco.mfstrim.utils.PermissionUtils
+import com.draco.anyassistant.BuildConfig
+import com.draco.anyassistant.utils.PermissionUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

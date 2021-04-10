@@ -5,7 +5,7 @@
 
     <string name="permission_title">Woah there!</string>
     <string name="permission_message">We need a special permission to continue. Use ADB to run the following command (one line):</string>
-    <string name="permission_command">adb shell pm grant com.draco.mfstrim android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="permission_command">adb shell pm grant com.draco.anyassistant android.permission.WRITE_SECURE_SETTINGS</string>
 
     <string name="please_wait">Waiting for permission</string>
     <string name="copied">Copied to clipboard</string>

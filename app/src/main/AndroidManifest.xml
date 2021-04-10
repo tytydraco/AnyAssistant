@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.draco.mfstrim">
+    package="anyassistant">
 
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MFSTRIM">
         <activity
-            android:name=".views.MainActivity"
+            android:name="com.draco.anyassistant.views.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".views.PermissionActivity"
+        <activity android:name="com.draco.anyassistant.views.PermissionActivity"
             android:label="@string/title_permission"/>
     </application>
 

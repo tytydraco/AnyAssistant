@@ -1,4 +1,4 @@
-package com.draco.mfstrim.views
+package com.draco.anyassistant.views
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.draco.mfstrim.R
-import com.draco.mfstrim.viewmodels.PermissionActivityViewModel
+import com.draco.anyassistant.R
+import com.draco.anyassistant.viewmodels.PermissionActivityViewModel
 import com.google.android.material.snackbar.Snackbar
 
 class PermissionActivity : AppCompatActivity() {

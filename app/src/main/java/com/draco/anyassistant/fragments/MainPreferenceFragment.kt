@@ -1,12 +1,12 @@
-package com.draco.mfstrim.fragments
+package com.draco.anyassistant.fragments
 
 import android.content.*
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
 import androidx.preference.*
-import com.draco.mfstrim.R
-import com.draco.mfstrim.repositories.constants.SettingsConstants
+import com.draco.anyassistant.R
+import com.draco.anyassistant.repositories.constants.SettingsConstants
 import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 import com.google.android.material.snackbar.Snackbar
 

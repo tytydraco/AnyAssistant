@@ -1,4 +1,4 @@
-package com.draco.mfstrim
+package com.draco.anyassistant
 
 import org.junit.Test
 

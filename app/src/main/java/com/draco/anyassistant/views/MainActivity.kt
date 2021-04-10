@@ -1,12 +1,12 @@
-package com.draco.mfstrim.views
+package com.draco.anyassistant.views
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentContainerView
-import com.draco.mfstrim.R
-import com.draco.mfstrim.fragments.MainPreferenceFragment
-import com.draco.mfstrim.utils.PermissionUtils
+import com.draco.anyassistant.R
+import com.draco.anyassistant.fragments.MainPreferenceFragment
+import com.draco.anyassistant.utils.PermissionUtils
 
 class MainActivity : AppCompatActivity() {
     private lateinit var preferences: FragmentContainerView
