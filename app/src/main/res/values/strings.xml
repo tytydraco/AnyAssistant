@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">mFSTRIM</string>
+    <string name="app_name">AnyAssistant</string>
 
     <string name="title_permission">Permissions</string>
 
@@ -19,9 +19,13 @@
     <string name="category_config">Configuration</string>
     <string name="category_about">About</string>
 
-    <string name="pref_interval_title">Fstrim interval</string>
-    <string name="pref_interval_summary">How often should we force an fstrim during bootup</string>
-    <string name="pref_interval_key">interval</string>
+    <string name="pref_reset_title">Reset</string>
+    <string name="pref_reset_summary">Use the default Assistant app</string>
+    <string name="pref_reset_key">reset</string>
+
+    <string name="pref_pick_title">Pick assistant</string>
+    <string name="pref_pick_summary">Choose a new app to use as the assistant</string>
+    <string name="pref_pick_key">pick</string>
 
     <string name="pref_developer_title">Developer</string>
     <string name="pref_developer_summary">Tyler Nijmeh</string>

@@ -1,7 +1,7 @@
 <resources>
-    <style name="Theme.MFSTRIM" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="colorPrimary">@color/pink</item>
-        <item name="colorSecondary">@color/pink</item>
+    <style name="Theme.AnyAssistant" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorSecondary">@color/red</item>
         <item name="android:statusBarColor">?colorSurface</item>
         <item name="android:navigationBarColor">?colorSurface</item>
     </style>

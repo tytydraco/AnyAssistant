@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="@string/category_config">
-        <ListPreference
-            android:title="@string/pref_interval_title"
-            android:summary="@string/pref_interval_summary"
-            android:key="@string/pref_interval_key"
-            android:icon="@drawable/ic_baseline_content_cut_24"
-            android:entries="@array/interval_entries"
-            android:entryValues="@array/interval_values"
-            android:defaultValue="259200000" />
+        <Preference
+            android:title="@string/pref_reset_title"
+            android:summary="@string/pref_reset_summary"
+            android:key="@string/pref_reset_key"
+            android:icon="@drawable/ic_baseline_clear_24" />
+        <Preference
+            android:title="@string/pref_pick_title"
+            android:summary="@string/pref_pick_summary"
+            android:key="@string/pref_pick_key"
+            android:icon="@drawable/ic_baseline_apps_24" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/category_about">
         <Preference

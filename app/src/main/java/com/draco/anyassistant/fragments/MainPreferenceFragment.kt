@@ -1,17 +1,18 @@
 package com.draco.anyassistant.fragments
 
-import android.content.*
+import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
-import android.provider.Settings
-import androidx.preference.*
+import androidx.preference.Preference
+import androidx.preference.PreferenceFragmentCompat
 import com.draco.anyassistant.R
-import com.draco.anyassistant.repositories.constants.SettingsConstants
 import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 import com.google.android.material.snackbar.Snackbar
 
 class MainPreferenceFragment : PreferenceFragmentCompat(), SharedPreferences.OnSharedPreferenceChangeListener {
-    private lateinit var interval: ListPreference
+    private lateinit var reset: Preference
+    private lateinit var pick: Preference
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.main, rootKey)
@@ -30,7 +31,8 @@ class MainPreferenceFragment : PreferenceFragmentCompat(), SharedPreferences.OnS
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        interval = findPreference(getString(R.string.pref_interval_key))!!
+        reset = findPreference(getString(R.string.pref_reset_key))!!
+        pick = findPreference(getString(R.string.pref_pick_key))!!
 
         refreshSettings()
     }
@@ -53,14 +55,14 @@ class MainPreferenceFragment : PreferenceFragmentCompat(), SharedPreferences.OnS
      * Update the UI to show the new constants
      */
     private fun refreshSettings() {
-        interval.value = Settings.Global.getString(requireContext().contentResolver, SettingsConstants.FSTRIM_MANDATORY_INTERVAL) ?: "null"
+        //interval.value = Settings.Global.getString(requireContext().contentResolver, SettingsConstants.FSTRIM_MANDATORY_INTERVAL) ?: "null"
     }
 
     /**
      * Take the UI settings and apply them as constants
      */
     private fun applySettings() {
-        Settings.Global.putString(requireContext().contentResolver, SettingsConstants.FSTRIM_MANDATORY_INTERVAL, interval.value)
+        //Settings.Global.putString(requireContext().contentResolver, SettingsConstants.FSTRIM_MANDATORY_INTERVAL, interval.value)
     }
 
     /**
