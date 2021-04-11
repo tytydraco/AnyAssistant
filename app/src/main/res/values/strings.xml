@@ -2,6 +2,7 @@
     <string name="app_name">AnyAssistant</string>
 
     <string name="title_permission">Permissions</string>
+    <string name="title_select">Select</string>
 
     <string name="permission_title">Woah there!</string>
     <string name="permission_message">We need a special permission to continue. Use ADB to run the following command (one line):</string>
@@ -13,7 +14,7 @@
     <string name="snackbar_intent_failed">Could not handle this action</string>
 
     <string name="developer_url">https://www.github.com/tytydraco</string>
-    <string name="source_url">https://www.github.com/tytydraco/mFSTRIM</string>
+    <string name="source_url">https://www.github.com/tytydraco/AnyAssistant</string>
     <string name="contact_url">mailto:tylernij@gmail.com</string>
 
     <string name="category_config">Configuration</string>

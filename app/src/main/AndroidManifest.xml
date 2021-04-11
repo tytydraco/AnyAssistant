@@ -6,6 +6,12 @@
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
 
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -25,6 +31,9 @@
 
         <activity android:name=".views.PermissionActivity"
             android:label="@string/title_permission"/>
+
+        <activity android:name=".views.SelectActivity"
+            android:label="title_select"/>
     </application>
 
 </manifest>
