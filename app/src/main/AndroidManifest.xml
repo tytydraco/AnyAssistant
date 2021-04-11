@@ -33,7 +33,7 @@
             android:label="@string/title_permission"/>
 
         <activity android:name=".views.SelectActivity"
-            android:label="title_select"/>
+            android:label="@string/title_select"/>
     </application>
 
 </manifest>
