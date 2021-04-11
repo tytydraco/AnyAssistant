@@ -9,8 +9,6 @@ import com.draco.anyassistant.models.AppInfo
 import java.util.*
 
 class SelectActivityViewModel(application: Application) : AndroidViewModel(application) {
-    private val context = application.applicationContext
-
     private val _appList = MutableLiveData<List<AppInfo>>()
     val appList: LiveData<List<AppInfo>> = _appList
 
@@ -19,6 +17,8 @@ class SelectActivityViewModel(application: Application) : AndroidViewModel(appli
     }
 
     fun updateList() {
+        val context = getApplication<Application>().applicationContext
+
         val launcherIntent = Intent(Intent.ACTION_MAIN, null).apply {
             addCategory(Intent.CATEGORY_LAUNCHER)
         }
