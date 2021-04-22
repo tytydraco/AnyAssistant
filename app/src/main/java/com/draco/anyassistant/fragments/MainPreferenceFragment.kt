@@ -1,11 +1,13 @@
 package com.draco.anyassistant.fragments
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
+import androidx.preference.PreferenceManager
 import com.draco.anyassistant.R
 import com.draco.anyassistant.repositories.constants.SettingsConstants
 import com.draco.anyassistant.views.SelectActivity
@@ -13,8 +15,15 @@ import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 import com.google.android.material.snackbar.Snackbar
 
 class MainPreferenceFragment : PreferenceFragmentCompat() {
+    private lateinit var sharedPrefs: SharedPreferences
+
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.main, rootKey)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context)
     }
 
     override fun onPreferenceTreeClick(preference: Preference): Boolean {
@@ -25,6 +34,11 @@ class MainPreferenceFragment : PreferenceFragmentCompat() {
                     SettingsConstants.ASSISTANT,
                     null
                 )
+
+                with(sharedPrefs.edit()) {
+                    putString(requireContext().getString(R.string.pref_saved_component_key), null)
+                    apply()
+                }
             }
             getString(R.string.pref_pick_key) -> {
                 val intent = Intent(requireContext(), SelectActivity::class.java)
