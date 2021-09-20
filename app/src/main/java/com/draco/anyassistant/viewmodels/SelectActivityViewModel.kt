@@ -6,7 +6,6 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.draco.anyassistant.models.AppInfo
-import java.util.*
 
 class SelectActivityViewModel(application: Application) : AndroidViewModel(application) {
     private val _appList = MutableLiveData<List<AppInfo>>()
@@ -39,7 +38,7 @@ class SelectActivityViewModel(application: Application) : AndroidViewModel(appli
         }
 
         newAppList.sortBy {
-            it.label.toLowerCase(Locale.getDefault())
+            it.label.lowercase()
         }
 
         if (!_appList.value?.toTypedArray().contentEquals(newAppList.toTypedArray()))
