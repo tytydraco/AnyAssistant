@@ -12,8 +12,8 @@ android {
         applicationId "com.draco.anyassistant"
         minSdk 19
         targetSdk 31
-        versionCode 4
-        versionName "1.2.1"
+        versionCode 5
+        versionName "1.2.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
